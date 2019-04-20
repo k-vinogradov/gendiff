@@ -1,0 +1,6 @@
+before_install:
+  - make install
+
+script:
+  - make lint
+  - make test

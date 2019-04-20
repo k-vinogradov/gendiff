@@ -1,0 +1,33 @@
+[
+  {
+    "key": "common",
+    "nodeType": "subtree",
+    "children": [
+      { "key": "setting1", "nodeType": "unmodified", "value": "Value 1" },
+      { "key": "setting2", "nodeType": "removed", "value": 200 },
+      { "key": "setting3", "nodeType": "modified", "originValue": true, "newValue": { "key": "value" } },
+      {
+        "key": "setting6",
+        "nodeType": "subtree",
+        "children": [
+          { "key": "key", "nodeType": "unmodified", "value": "value" },
+          { "key": "ops", "nodeType": "added", "value": "vops" }
+        ]
+      },
+      { "key": "follow", "nodeType": "added", "value": false },
+      { "key": "setting4", "nodeType": "added", "value": "blah blah" },
+      { "key": "setting5", "nodeType": "added", "value": { "key5": "value5" } }
+    ]
+  },
+  {
+    "key": "group1",
+    "nodeType": "subtree",
+    "children": [
+      { "key": "baz", "nodeType": "modified", "originValue": "bas", "newValue": "bars" },
+      { "key": "foo", "nodeType": "unmodified", "value": "bar" },
+      { "key": "nest", "nodeType": "modified", "originValue": { "key": "value" }, "newValue": "str" }
+    ]
+  },
+  { "key": "group2", "nodeType": "removed", "value": { "abc": 12345 } },
+  { "key": "group3", "nodeType": "added", "value": { "fee": 100500 } }
+]
